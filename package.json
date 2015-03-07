@@ -1,0 +1,17 @@
+{
+  "name": "izelnakri.com",
+  "version": "0.0.1",
+  "description": "My Personal Website",
+  "main": "app.coffee",
+  "scripts": {
+    "test": "test.coffee",
+    "start": "coffee app.coffee"
+  },
+  "author": "Izel Nakri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.2",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2"
+  }
+}
