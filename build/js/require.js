@@ -10,13 +10,14 @@ require.config({
         }
     },
     "paths": {
-        "jquery": ["https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min", "jquery"],
-        "backbone": ["https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min", "backbone"],
-        "underscore": ["https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min", "underscore"],
-        "webfont": ["https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont", "webfont"],
-        "plugins": "plugins",
-        "riot": ["https://cdnjs.cloudflare.com/ajax/libs/riot/2.0.12/riot.min"],
-        "components": "components"
+        "jquery": ["https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/jquery", "jquery"],
+        "backbone": ["https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/backbone", "backbone"],
+        "underscore": ["https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/lodash", "lodash"],
+        "webfont": ["https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont", "http://d1zlufq8rmjxl.cloudfront.net/build/js/webfont", "webfont"],
+        "plugins": ["http://d1zlufq8rmjxl.cloudfront.net/build/js/plugins", "plugins"],
+        "riot": ["https://cdnjs.cloudflare.com/ajax/libs/riot/2.0.12/riot.min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/riot", "riot"],
+        "components": ["http://d1zlufq8rmjxl.cloudfront.net/build/js/components", "components"],
+        "production": ["http://d1zlufq8rmjxl.cloudfront.net/build/js/production", "production"]
     }
 });
 require(["production"]);
