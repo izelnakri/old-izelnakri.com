@@ -26,3 +26,10 @@ gulp.task('sass', function(cb) {
   .pipe(gulp.dest('build/css'))
   cb()
 });
+
+gulp.task('watch', function () {
+  // gulp.watch(paths.scripts, ['scripts', 'compile-js-lib', 'compile-js']);
+  gulp.watch(paths.sass, ['sass']);
+});
+
+gulp.task('default', ['sass', 'watch']);

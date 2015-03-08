@@ -10,6 +10,8 @@
 
 // These 3 variables are copies of ones used in Compass' Vertical Rhythm module.
 
+//BASE THIS ON MINOR-THIRD (slightly bigger) / Major third
+
   // The base font size.
   $base-font-size: 16px !default;
 
@@ -33,20 +35,25 @@
     'opera':   null
   ) !default;
 
+$round-to-nearest-half-line: true;
 
 // Set this to true to force CSS output to exactly match normalize.css.
 $strict-normalize: true !default;
 
 // The default font family.
-$base-font-family: sans-serif !default;
+$base-font-family: Helvetica !default;
+
+//between 1 to 2 base-font/line-height = x * scale (x times of scale)
+//h fonts are between 1 to 2
+
 
 // The font sizes for h1-h6.
-$h1-font-size: 2    * $base-font-size !default;
-$h2-font-size: 1.5  * $base-font-size !default;
-$h3-font-size: 1.17 * $base-font-size !default;
-$h4-font-size: 1    * $base-font-size !default;
-$h5-font-size: 0.83 * $base-font-size !default;
-$h6-font-size: 0.67 * $base-font-size !default;
+$h1-font-size: 2.027  * $base-font-size !default;
+$h2-font-size: 1.802  * $base-font-size !default;
+$h3-font-size: 1.602 * $base-font-size !default;
+$h4-font-size: 1.424   * $base-font-size !default;
+$h5-font-size: 1.266 * $base-font-size !default;
+$h6-font-size: 1.125 * $base-font-size !default;
 
 // The amount lists and blockquotes are indented.
 $indent-amount: 40px !default;
