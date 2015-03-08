@@ -8,16 +8,14 @@ app.use morgan("dev")
 app.use compress()
 
 app.use express.static('public')
-
 app.use express.static('views')
-
 app.use '/build', express.static('build')
 
-app.set('port', (process.env.PORT || 5000))
+app.set 'port', (process.env.PORT || 5000)
 
-app.get('/', (err, res) ->
+app.get '/', (err, res) ->
   res.sendFile 'index.html'
-)
+
 
 server = app.listen(app.get('port'), ->
   host = server.address().address
