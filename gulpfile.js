@@ -31,7 +31,7 @@ gulp.task('sass', function(cb) {
     cacheLocation: "build/source/.sass-cache"
     }).on("error", function(err) { console.log(err) })
   .pipe(prefix())
-  // .pipe(minifyCSS())
+  .pipe(minifyCSS())
   .pipe(concat('production.min.css'))
   .pipe(gulp.dest('build/css'))
   cb()
