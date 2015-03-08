@@ -13,12 +13,13 @@ app.use express.static('views')
 
 app.use '/build', express.static('build')
 
+app.set('port', (process.env.PORT || 5000))
 
 app.get('/', (err, res) ->
   res.sendFile 'index.html'
 )
 
-server = app.listen(3000, ->
+server = app.listen(app.get('port'), ->
   host = server.address().address
   port = server.address().port
 
