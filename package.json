@@ -4,8 +4,9 @@
   "description": "My Personal Website",
   "main": "app.coffee",
   "scripts": {
-    "test": "test.coffee",
-    "start": "coffee app.coffee"
+    "preinstall": "npm i -g coffee-script",
+    "start": "coffee app.coffee",
+    "test": "test.coffee"
   },
   "author": "Izel Nakri",
   "license": "ISC",
