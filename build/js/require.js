@@ -13,9 +13,10 @@ require.config({
         "jquery": ["https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min", "jquery"],
         "backbone": ["https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min", "backbone"],
         "underscore": ["https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min", "underscore"],
-        "webfont": ["https://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont", "webfont"],
+        "webfont": ["https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont", "webfont"],
         "plugins": "plugins",
-        "riot": ["https://cdn.jsdelivr.net/riot/2.0/riot.min"],
+        "riot": ["https://cdnjs.cloudflare.com/ajax/libs/riot/2.0.12/riot.min"],
+        "components": "components"
     }
 });
 require(["production"]);

@@ -35,13 +35,13 @@
     'opera':   null
   ) !default;
 
-$round-to-nearest-half-line: true;
+// $round-to-nearest-half-line: true;
 
 // Set this to true to force CSS output to exactly match normalize.css.
-$strict-normalize: true !default;
+$strict-normalize: false !default;
 
 // The default font family.
-$base-font-family: Helvetica !default;
+$base-font-family: "Helvetica Neue" !default;
 
 //between 1 to 2 base-font/line-height = x * scale (x times of scale)
 //h fonts are between 1 to 2
@@ -81,9 +81,11 @@ $indent-amount: 40px !default;
  */
 
 html {
+  color: #333;
   font-family: $base-font-family; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  //add here the color
   // Show a background image that can be used to debug your alignments.
   // @include debug-vertical-alignment();
 }
@@ -244,39 +246,39 @@ h1 {
   }
 
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  @include leader(1, $h1-font-size);
-  @include trailer(1, $h1-font-size);
+  @include leader(0.5, $h1-font-size);
+  @include trailer(0.5, $h1-font-size);
 }
 
 @if not $strict-normalize or support-legacy-browser(ie, "7") {
   h2 {
     @include adjust-font-size-to( $h2-font-size );
-    @include leader(1, $h2-font-size);
-    @include trailer(1, $h2-font-size);
+    @include leader(0.5, $h2-font-size);
+    @include trailer(0.5, $h2-font-size);
   }
 
   h3 {
     @include adjust-font-size-to( $h3-font-size );
-    @include leader(1, $h3-font-size);
-    @include trailer(1, $h3-font-size);
+    @include leader(0.5, $h3-font-size);
+    @include trailer(0.5, $h3-font-size);
   }
 
   h4 {
     @include adjust-font-size-to( $h4-font-size );
-    @include leader(1, $h4-font-size);
-    @include trailer(1, $h4-font-size);
+    @include leader(0.5, $h4-font-size);
+    @include trailer(0.5, $h4-font-size);
   }
 
   h5 {
     @include adjust-font-size-to( $h5-font-size );
-    @include leader(1, $h5-font-size);
-    @include trailer(1, $h5-font-size);
+    @include leader(0.5, $h5-font-size);
+    @include trailer(0.5, $h5-font-size);
   }
 
   h6 {
     @include adjust-font-size-to( $h6-font-size );
-    @include leader(1, $h6-font-size);
-    @include trailer(1, $h6-font-size);
+    @include leader(0.5, $h6-font-size);
+    @include trailer(0.5, $h6-font-size);
   }
 }
 
