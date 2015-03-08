@@ -16,7 +16,7 @@ require.config({
         "webfont": ["https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont", "webfont"],
         "plugins": "plugins",
         "riot": ["https://cdnjs.cloudflare.com/ajax/libs/riot/2.0.12/riot.min"],
-        "components": "components"
+        "component": "../source/izels-tag"
     }
 });
 require(["production"]);
