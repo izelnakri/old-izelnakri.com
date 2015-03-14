@@ -5,7 +5,7 @@ require(['webfont'], function() {
       },
       custom: {
         families: [ 'icomoon' ],
-        urls: [ '//d1zlufq8rmjxl.cloudfront.net/build/css/icons.css']
+        urls: [ '/build/css/icons.css']
       }
     });
 });

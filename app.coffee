@@ -16,7 +16,6 @@ app.use morgan("dev")
 app.set 'port', (process.env.PORT || 5000)
 
 app.get '/', (err, res) ->
-  res.set("Access-Control-Allow-Origin": "*")
   res.sendFile 'index.html'
 
 
