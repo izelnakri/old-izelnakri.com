@@ -3,13 +3,13 @@ morgan = require "morgan"
 compress = require "compression"
 app = express()
 
-app.use morgan("dev")
-
 app.use compress()
 
 app.use express.static('public')
 app.use express.static('views')
-app.use '/build', express.static('build')
+app.use '/build', express.static('build', { maxAge: '2 days' })
+
+app.use morgan("dev")
 
 app.set 'port', (process.env.PORT || 5000)
 
