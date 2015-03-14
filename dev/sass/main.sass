@@ -2,9 +2,11 @@
 
 body
   +debug-vertical-alignment
-div
-  display: inline-block
-  max-width: space(6)
+
+article
+  @extend .pure-g
+  p
+    @extend .pure-u-1-2
 
 [color~=red]
   color: red

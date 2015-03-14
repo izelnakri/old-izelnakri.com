@@ -1,4 +1,5 @@
 var gulp       = require('gulp'),
+    nodemon    = require('gulp-nodemon'),
     concat     = require('gulp-concat'),
     size       = require('gulp-size'),
     riot       = require('gulp-riot'),
@@ -16,7 +17,6 @@ var paths = {
     sass: ['dev/sass/main.sass'],
     components: ['dev/components/izels-tag.tag']
 };
-
 
 gulp.task('riot', function(cb) {
   return gulp.src(paths.components)
@@ -51,4 +51,10 @@ gulp.task('watch', function () {
   gulp.watch(paths.sass, ['sass']);
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('compile', ['scripts', 'sass', 'compile-css', 'compile-js-lib', 'compile-js']);
+
+gulp.task('develop', function() {
+  nodemon({ script: "app.coffee",  ignore: ['node_modules/**', 'tmp/**']})
+});
+
+gulp.task('default', ['sass', 'watch', 'develop']);
