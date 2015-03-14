@@ -5,13 +5,11 @@
   //*letter-spacing: normal // reset IE < 8
   //*word-spacing: -0.43em // IE < 8: collapse white-space between units
 
-
-/* Opera as of 12 on Windows needs word-spacing.
- * The ".opera-only" selector is used to prevent actual prefocus styling
- * and is not required in markup.*/
-
-// .opera-only :-o-prefocus
-//    word-spacing: -0.43em
+.row-responsive
+  letter-spacing: -0.31em
+  *letter-spacing: normal
+  *word-spacing: -0.43em
+  word-spacing: -0.43em
 
 .column
   display: inline-block
@@ -22,28 +20,15 @@
   text-rendering: auto
   //*display: inline // IE < 8: fake inline-block
 
-.row-responsive
-  letter-spacing: -0.31em
-  *letter-spacing: normal
-  *word-spacing: -0.43em
-  word-spacing: -0.43em
-
-/* Opera as of 12 on Windows needs word-spacing.
- * The ".opera-only" selector is used to prevent actual prefocus styling
- * and is not required in markup. */
-
-// .opera-only :-o-prefocus,
-  // word-spacing: -0.43em
-
 .row-responsive img
   max-width: 100%
 
 @media (min-width: 980px)
-  .pure-visible-phone
+  .visible-phone
     display: none
-  .pure-visible-tablet
+  .visible-tablet
     display: none
-  .pure-hidden-desktop
+  .hidden-desktop
     display: none
 
 @media (max-width: 480px)
@@ -53,15 +38,15 @@
 @media (max-width: 767px)
   .row-responsive > [class^="column"]
     width: 100%
-  .pure-hidden-phone
+  .hidden-phone
     display: none
-  .pure-visible-desktop
+  .visible-desktop
     display: none
 
 @media (min-width: 768px) and (max-width: 979px)
-  .pure-hidden-tablet
+  .hidden-tablet
     display: none
-  .pure-visible-desktop
+  .visible-desktop
     display: none
 
 .column-1,
