@@ -1,42 +1,41 @@
 // grid.sass comes here.
-.pure-g
+.row
   letter-spacing: -0.31em // Webkit: collapse white-space between units
-  *letter-spacing: normal // reset IE < 8
-  *word-spacing: -0.43em // IE < 8: collapse white-space between units
   text-rendering: optimizespeed // Webkit: fixes text-rendering: optimizeLegibility
+  //*letter-spacing: normal // reset IE < 8
+  //*word-spacing: -0.43em // IE < 8: collapse white-space between units
+
 
 /* Opera as of 12 on Windows needs word-spacing.
  * The ".opera-only" selector is used to prevent actual prefocus styling
  * and is not required in markup.*/
 
-.opera-only :-o-prefocus,
-.pure-g
-  word-spacing: -0.43em
+// .opera-only :-o-prefocus
+//    word-spacing: -0.43em
 
-.pure-u
+.column
   display: inline-block
   zoom: 1
-  *display: inline
-  // IE < 8: fake inline-block
   letter-spacing: normal
   word-spacing: normal
   vertical-align: top
   text-rendering: auto
+  //*display: inline // IE < 8: fake inline-block
 
-.pure-g-r
+.row-responsive
   letter-spacing: -0.31em
   *letter-spacing: normal
   *word-spacing: -0.43em
+  word-spacing: -0.43em
 
 /* Opera as of 12 on Windows needs word-spacing.
  * The ".opera-only" selector is used to prevent actual prefocus styling
  * and is not required in markup. */
 
-.opera-only :-o-prefocus,
-.pure-g-r
-  word-spacing: -0.43em
+// .opera-only :-o-prefocus,
+  // word-spacing: -0.43em
 
-.pure-g-r img
+.row-responsive img
   max-width: 100%
 
 @media (min-width: 980px)
@@ -48,11 +47,11 @@
     display: none
 
 @media (max-width: 480px)
-  .pure-g-r > [class^="pure-u"]
+  .row-responsive > [class^="column"]
     width: 100%
 
 @media (max-width: 767px)
-  .pure-g-r > [class^="pure-u"]
+  .row-responsive > [class^="column"]
     width: 100%
   .pure-hidden-phone
     display: none
@@ -65,122 +64,123 @@
   .pure-visible-desktop
     display: none
 
-.pure-u-1,
-.pure-u-1-2,
-.pure-u-1-3,
-.pure-u-2-3,
-.pure-u-1-4,
-.pure-u-3-4,
-.pure-u-1-5,
-.pure-u-2-5,
-.pure-u-3-5,
-.pure-u-4-5,
-.pure-u-1-6,
-.pure-u-5-6,
-.pure-u-1-8,
-.pure-u-3-8,
-.pure-u-5-8,
-.pure-u-7-8,
-.pure-u-1-12,
-.pure-u-5-12,
-.pure-u-7-12,
-.pure-u-11-12,
-.pure-u-1-24,
-.pure-u-5-24,
-.pure-u-7-24,
-.pure-u-11-24,
-.pure-u-13-24,
-.pure-u-17-24,
-.pure-u-19-24,
-.pure-u-23-24
+.column-1,
+.column-1-2,
+.column-1-3,
+.column-2-3,
+.column-1-4,
+.column-3-4,
+.column-1-5,
+.column-2-5,
+.column-3-5,
+.column-4-5,
+.column-1-6,
+.column-5-6,
+.column-1-8,
+.column-3-8,
+.column-5-8,
+.column-7-8,
+.column-1-12,
+.column-5-12,
+.column-7-12,
+.column-11-12,
+.column-1-24,
+.column-5-24,
+.column-7-24,
+.column-11-24,
+.column-13-24,
+.column-17-24,
+.column-19-24,
+.column-23-24
   display: inline-block
   zoom: 1
-  *display: inline // IE < 8: fake inline-block
   letter-spacing: normal
   word-spacing: normal
   vertical-align: top
   text-rendering: auto
+  // *display: inline // IE < 8: fake inline-block
 
-.pure-u-1
+
+.column-1
   display: block
 
-.pure-u-1-2
+.column-1-2
   width: 50%
 
-.pure-u-1-3
+.column-1-3
   width: 33.33333%
 
-.pure-u-2-3
+.column-2-3
   width: 66.66666%
 
-.pure-u-1-4
+.column-1-4
   width: 25%
 
-.pure-u-3-4
+.column-3-4
   width: 75%
 
-.pure-u-1-5
+.column-1-5
   width: 20%
 
-.pure-u-2-5
+.column-2-5
   width: 40%
 
-.pure-u-3-5
+.column-3-5
   width: 60%
 
-.pure-u-4-5
+.column-4-5
   width: 80%
 
-.pure-u-1-6
+.column-1-6
   width: 16.656%
 
-.pure-u-5-6
+.column-5-6
   width: 83.33%
 
-.pure-u-1-8
+.column-1-8
   width: 12.5%
 
-.pure-u-3-8
+.column-3-8
   width: 37.5%
 
-.pure-u-5-8
+.column-5-8
   width: 62.5%
 
-.pure-u-7-8
+.column-7-8
   width: 87.5%
 
-.pure-u-1-12
+.column-1-12
   width: 8.3333%
 
-.pure-u-5-12
+.column-5-12
   width: 41.6666%
 
-.pure-u-7-12
+.column-7-12
   width: 58.3333%
 
-.pure-u-11-12
+.column-11-12
   width: 91.6666%
 
-.pure-u-1-24
+.column-1-24
   width: 4.1666%
 
-.pure-u-5-24
+.column-5-24
   width: 20.8333%
 
-.pure-u-7-24
+.column-7-24
   width: 29.1666%
 
-.pure-u-11-24
+.column-11-24
   width: 45.8333%
 
-.pure-u-13-24
+.column-13-24
   width: 54.1666%
 
-.pure-u-17-24
+.column-17-24
   width: 70.8333%
 
-.pure-u-19-24
+.column-19-24
   width: 79.1666%
 
-.pure-u-23-24
+.column-23-24
   width: 95.8333%
