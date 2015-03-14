@@ -8,7 +8,7 @@ app.use compress()
 app.use express.static('public')
 app.use express.static('views')
 
-# assetOptions = { maxAge: '2 days' }
+assetOptions = { maxAge: '2 days' }
 app.use '/build', express.static('build', assetOptions if assetOptions?)
 
 app.use morgan("dev")
@@ -16,6 +16,7 @@ app.use morgan("dev")
 app.set 'port', (process.env.PORT || 5000)
 
 app.get '/', (err, res) ->
+  res.set("Access-Control-Allow-Origin": "*")
   res.sendFile 'index.html'
 
 
