@@ -47,6 +47,7 @@ gulp.task('scripts', function(cb) {
 });
 
 gulp.task('watch', function () {
+  // watch font file as well!!
   // gulp.watch(paths.scripts, ['scripts', 'compile-js-lib', 'compile-js']);
   gulp.watch(paths.sass, ['sass']);
 });

@@ -17,7 +17,7 @@ require.config({
         "plugins": ["http://d1zlufq8rmjxl.cloudfront.net/build/js/plugins", "plugins"],
         "riot": ["https://cdnjs.cloudflare.com/ajax/libs/riot/2.0.12/riot.min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/riot", "riot"],
         "components": ["http://d1zlufq8rmjxl.cloudfront.net/build/js/components", "components"],
-        "production": ["http://d1zlufq8rmjxl.cloudfront.net/build/js/production", "production"]
+        "production": ["/build/js/production", "production"]
     }
 });
 require(["production"]);

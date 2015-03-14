@@ -1,4 +1,3 @@
-// grid.sass comes here.
 .row
   letter-spacing: -0.31em // Webkit: collapse white-space between units
   text-rendering: optimizespeed // Webkit: fixes text-rendering: optimizeLegibility
@@ -10,6 +9,8 @@
   *letter-spacing: normal
   *word-spacing: -0.43em
   word-spacing: -0.43em
+  img
+    max-width: 100%
 
 .column
   display: inline-block
@@ -19,9 +20,6 @@
   vertical-align: top
   text-rendering: auto
   //*display: inline // IE < 8: fake inline-block
-
-.row-responsive img
-  max-width: 100%
 
 @media (min-width: 980px)
   .visible-phone
