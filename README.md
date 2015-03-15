@@ -1,7 +1,7 @@
 ##TODO
   - TODO test responsive pure grid, check how recent our grid.sass compared to pure.css grid.
 
-  - implement icon fonts(?) - download css/ref - minify - put the font to the folders
+  - implement icon fonts(?) - download css/ref - minify - put the font to the folders - FIX CDN CORS problem.
 
   - add google tracker
 

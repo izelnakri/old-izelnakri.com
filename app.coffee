@@ -5,6 +5,11 @@ app = express()
 
 app.use compress()
 
+app.use((req, res, next) ->
+  res.header("Access-Control-Allow-Origin", "*")
+  next()
+)
+
 app.use express.static('public')
 app.use express.static('views')
 
@@ -16,6 +21,8 @@ app.use morgan("dev")
 app.set 'port', (process.env.PORT || 5000)
 
 app.get '/', (err, res) ->
+  res.set("Access-Control-Allow-Origin", "*")
+  res.set("Access-Control-Allow-Headers", "X-Requested-With")
   res.sendFile 'index.html'
 
 
