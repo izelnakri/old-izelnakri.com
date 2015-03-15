@@ -4,7 +4,8 @@ compress = require "compression"
 app = express()
 
 app.use((req, res, next) ->
-  res.header("Access-Control-Allow-Origin", "*") #this should be the site itself only
+  res.set("Access-Control-Allow-Origin", "*") #this should be the site itself only
+  res.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
   next()
 )
 
@@ -13,6 +14,7 @@ app.use compress()
 
 app.use express.static('public')
 app.use express.static('views')
+
 
 # assetOptions = { maxAge: '2 days' }
 app.use '/build', express.static('build', assetOptions if assetOptions?)
