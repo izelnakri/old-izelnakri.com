@@ -9,7 +9,7 @@ app.use((req, res, next) ->
 )
 
 app.use compress()
-#cache-able app libraries + fonts + font-css
+#maxAge cache-able app libraries + fonts + font-css
 
 app.use express.static('public')
 app.use express.static('views')
