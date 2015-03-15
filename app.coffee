@@ -5,7 +5,6 @@ app = express()
 
 app.use((req, res, next) ->
   res.set("Access-Control-Allow-Origin", "*") #this should be the site itself only
-  res.set('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type');
   next()
 )
 
