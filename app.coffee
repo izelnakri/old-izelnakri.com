@@ -3,13 +3,12 @@ morgan = require "morgan"
 compress = require "compression"
 app = express()
 
-app.use compress()
-
 app.use((req, res, next) ->
   res.header("Access-Control-Allow-Origin", "*") #this should be the site itself only
   next()
 )
 
+app.use compress()
 #cache-able app libraries + fonts + font-css
 
 app.use express.static('public')
