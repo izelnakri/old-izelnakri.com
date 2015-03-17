@@ -6,10 +6,6 @@ require(['webfont'], function() {
     });
 });
 
-require(['modernizr'], function () {
-  //add here the feature detection logic
-});
-
 require(['jquery', 'underscore', 'backbone','webfont'], function($, _, Backbone, Webfont) {
   console.log("HELLO WORLD");
 });

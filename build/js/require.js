@@ -10,7 +10,6 @@ require.config({
         }
     },
     "paths": {
-        "modernizr": ["modernizr", "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"],
         "jquery": ["https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/jquery", "jquery"],
         "backbone": ["https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/backbone", "backbone"],
         "underscore": ["https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min", "http://d1zlufq8rmjxl.cloudfront.net/build/js/lodash", "lodash"],
