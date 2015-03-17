@@ -2,12 +2,12 @@ require(['webfont'], function() {
   WebFont.load({
       google: {
         families: ['Lato:400,700:latin']
-      },
-      custom: {
-        families: [ 'icomoon' ],
-        urls: [ '//d1zlufq8rmjxl.cloudfront.net/build/css/icons.css']
       }
     });
+});
+
+require(['modernizr'], function () {
+  //add here the feature detection logic
 });
 
 require(['jquery', 'underscore', 'backbone','webfont'], function($, _, Backbone, Webfont) {

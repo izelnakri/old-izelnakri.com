@@ -31,8 +31,10 @@
     <meta property="al:web:url" content="http://www.example.com/s" />
     <!-- optional: appstore applinks, then should_fallback to false: http://applinks.org/documentation -->
 
-    <link rel="stylesheet" href="//d1zlufq8rmjxl.cloudfront.net/build/css/production.min.css">
-    <script src="//d1zlufq8rmjxl.cloudfront.net/build/js/modernizr.js"></script>
+    <link rel="stylesheet" href="/build/css/production.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <!--[if lt IE 10]>

@@ -3,8 +3,6 @@
 
   - icomoon.app import embedded icon font then minify and put to build/css/icons.css
 
-  - add google tracker
-
   - create a cache system based on directory.
 
-  -implement the js workflow (jquery plugins, directories, minification etc.)
+  - implement the js workflow (jquery plugins, directories, minification etc.)
