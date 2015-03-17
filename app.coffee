@@ -15,7 +15,7 @@ app.use express.static('public')
 app.use express.static('views')
 
 
-# assetOptions = { maxAge: '2 days' }
+assetOptions = { maxAge: '5m' }
 app.use '/build', express.static('build', assetOptions if assetOptions?)
 
 app.use morgan("dev")
